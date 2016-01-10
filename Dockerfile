@@ -10,8 +10,6 @@ RUN apt-get install -y oracle-java8-set-default
 
 RUN apt-get install -y ruby
 
-#openjdk-7-jdk
-#ADD server /server
 
 RUN git clone https://github.com/Open-RIO/ToastAPI
 
@@ -30,5 +28,4 @@ RUN ruby tools/imports.rb
 RUN ./gradlew verify
 
 
-#EXPOSE 25565
 #ENTRYPOINT [ "sh" ]
